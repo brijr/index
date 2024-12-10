@@ -1,6 +1,6 @@
 import '../globals.css'
 
-import { Manrope as Font } from 'next/font/google'
+import { Geist_Mono as Font } from 'next/font/google'
 import type { Metadata } from 'next'
 import { pay } from 'site.config'
 import { ThemeProvider } from '@/components/theme/theme-provider'
@@ -47,20 +47,9 @@ const Header = () => {
   return (
     <Section className="py-6 md:py-6">
       <Container className="py-6 md:py-6">
-        <nav className="flex gap-4 justify-between items-center">
-          <h2 className="font-medium">
-            <Link href="/" className="group">
-              {pay.name}
-            </Link>
-          </h2>
-          <div className="flex gap-2">
-            <Button variant="outline" asChild>
-              <a href="https://payloadcms.com/docs">Payload Docs</a>
-            </Button>
-            <Button asChild>
-              <a href="https://github.com/9d8dev/pay">Github</a>
-            </Button>
-          </div>
+        <nav className="flex gap-4 justify-between items-center uppercase text-lg">
+          <h1>Bridger Tower *</h1>
+          <h2 className="text-muted-foreground">Designer / Engineer</h2>
         </nav>
       </Container>
     </Section>
