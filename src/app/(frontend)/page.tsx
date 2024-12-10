@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <Section>
       <Container className="grid gap-12 font-light">
-        <p></p>
+        <p>{pay.desc}</p>
         <SocialLinks />
       </Container>
     </Section>
