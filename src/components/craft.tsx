@@ -133,7 +133,7 @@ const Section = ({ children, className, id }: SectionProps) => {
 
 const Container = ({ children, className, id }: ContainerProps) => {
   return (
-    <div className={cn('mx-auto max-w-3xl', 'p-6 sm:p-8', className)} id={id}>
+    <div className={cn('mx-auto max-w-5xl', 'p-6 sm:p-8', className)} id={id}>
       {children}
     </div>
   )

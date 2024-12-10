@@ -20,7 +20,7 @@ export default function Index() {
           {projects
             .filter((project) => project.tag === 'software')
             .map((project, index) => (
-              <Project key={project.name || index} project={project} />
+              <Project key={project.name || index} project={project} index={index} />
             ))}
         </div>
       </Container>
@@ -28,14 +28,15 @@ export default function Index() {
   )
 }
 
-const Project = ({ project }: { project: ProjectProps }) => {
+const Project = ({ project, index }: { project: ProjectProps; index: number }) => {
   return (
     <a
       href={project.href}
       target="_blank"
-      className="hover:bg-accent/30 grid grid-cols-[1fr_2fr] py-4 items-start"
+      className="group hover:bg-accent/30 grid grid-cols-[auto_1fr_3fr] gap-6 py-4 items-start px-4 -mx-4"
     >
-      <h3 className="uppercase">
+      <p className="text-muted-foreground">{index.toString()}</p>
+      <h3 className="uppercase group-hover:underline underline-offset-2">
         {project.name}
         <ArrowUpRight className="inline" size={15} />
       </h3>
