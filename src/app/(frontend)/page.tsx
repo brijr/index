@@ -15,7 +15,8 @@ export default function Index() {
           functionality. I am passionate about user interface design and human computer interaction.
         </p>
 
-        <div id="projects" className="grid  gap-6">
+        <div id="projects" className="grid gap-2">
+          <h2 className="uppercase text-muted-foreground">Software</h2>
           {projects
             .filter((project) => project.tag === 'software')
             .map((project, index) => (
@@ -29,12 +30,16 @@ export default function Index() {
 
 const Project = ({ project }: { project: ProjectProps }) => {
   return (
-    <a href={project.href} target="_blank" className="group">
+    <a
+      href={project.href}
+      target="_blank"
+      className="hover:bg-accent/30 grid grid-cols-[1fr_2fr] py-4 items-start"
+    >
       <h3 className="uppercase">
         {project.name}
         <ArrowUpRight className="inline" size={15} />
       </h3>
-      <p className="text-muted-foreground">{project.desc} </p>
+      <p className="text-muted-foreground">{project.desc}</p>
     </a>
   )
 }
