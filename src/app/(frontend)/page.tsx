@@ -15,13 +15,12 @@ export default function Index() {
           functionality. I am passionate about user interface design and human computer interaction.
         </p>
 
-        <div id="projects" className="grid grid-cols-[1fr_1fr_3fr] gap-6">
-          <p className="text-muted-foreground">Project</p>
-          <p className="text-muted-foreground">Category</p>
-          <p className="text-muted-foreground">Description</p>
-          {projects.map((project, index) => (
-            <Project key={project.name || index} project={project} />
-          ))}
+        <div id="projects" className="grid  gap-6">
+          {projects
+            .filter((project) => project.tag === 'software')
+            .map((project, index) => (
+              <Project key={project.name || index} project={project} />
+            ))}
         </div>
       </Container>
     </Section>
@@ -30,19 +29,12 @@ export default function Index() {
 
 const Project = ({ project }: { project: ProjectProps }) => {
   return (
-    <>
-      <a
-        href={project.href}
-        target="_blank"
-        className="hover:underline underline-offset-2 w-full h-full"
-      >
-        <h3 className="uppercase">
-          {project.name}
-          <ArrowUpRight className="inline" size={15} />
-        </h3>
-      </a>
-      <p className="text-muted-foreground">{project.tag}</p>
-      <p>{project.desc} </p>
-    </>
+    <a href={project.href} target="_blank" className="group">
+      <h3 className="uppercase">
+        {project.name}
+        <ArrowUpRight className="inline" size={15} />
+      </h3>
+      <p className="text-muted-foreground">{project.desc} </p>
+    </a>
   )
 }
