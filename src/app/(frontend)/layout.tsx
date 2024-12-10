@@ -5,11 +5,8 @@ import type { Metadata } from 'next'
 import { pay } from 'site.config'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
-
-import Link from 'next/link'
-
-import { Button } from '@/components/ui/button'
 import { Section, Container } from '@/components/craft'
+import { SocialLinks } from '@/components/site/social-links'
 
 export const metadata: Metadata = {
   title: pay.title,
@@ -25,7 +22,7 @@ const font = Font({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="min-h-screen">
+      <body className="min-h-screen font-light">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -47,8 +44,11 @@ const Header = () => {
   return (
     <Section className="py-6 md:py-6">
       <Container className="py-6 md:py-6">
-        <nav className="flex gap-4 justify-between items-center uppercase text-lg">
-          <h1>Bridger Tower *</h1>
+        <nav className="flex gap-4 justify-between items-center uppercase">
+          <div>
+            <h1>Bridger Tower *</h1>
+            <SocialLinks />
+          </div>
           <h2 className="text-muted-foreground">Designer / Engineer</h2>
         </nav>
       </Container>

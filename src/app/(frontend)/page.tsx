@@ -1,54 +1,48 @@
 import { Section, Container } from '@/components/craft'
 import { ArrowUpRight } from 'lucide-react'
 
+import { projects, ProjectProps } from '@/lib/projects'
+
 // export const revalidate = 600
 
 export default function Index() {
   return (
     <Section>
-      <Container className="grid gap-12 font-light">
+      <Container className="grid gap-20">
         <p>
           I&apos;m a designer and software engineer specializing in creating intuitive,
           high-performance software and websites that merge visual excellence with practical
           functionality. I am passionate about user interface design and human computer interaction.
         </p>
-        <SocialLinks />
+
+        <div id="projects" className="grid grid-cols-[1fr_1fr_3fr] gap-6">
+          <p className="text-muted-foreground">Project</p>
+          <p className="text-muted-foreground">Category</p>
+          <p className="text-muted-foreground">Description</p>
+          {projects.map((project, index) => (
+            <Project key={project.name || index} project={project} />
+          ))}
+        </div>
       </Container>
     </Section>
   )
 }
 
-const SocialLinks = () => {
+const Project = ({ project }: { project: ProjectProps }) => {
   return (
-    <div className="flex flex-wrap gap-4 uppercase text-muted-foreground">
+    <>
       <a
-        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
-        href="https://resume.bridger.to"
+        href={project.href}
+        target="_blank"
+        className="hover:underline underline-offset-2 w-full h-full"
       >
-        Resume
-        <ArrowUpRight className="inline" size={15} />
+        <h3 className="uppercase">
+          {project.name}
+          <ArrowUpRight className="inline" size={15} />
+        </h3>
       </a>
-      <a
-        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
-        href="https://github.com/brijr"
-      >
-        Github
-        <ArrowUpRight className="inline" size={15} />
-      </a>
-      <a
-        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
-        href="https://x.com/bridgertower"
-      >
-        X.com
-        <ArrowUpRight className="inline" size={15} />
-      </a>
-      <a
-        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
-        href="https://linkedin.com/in/brijr"
-      >
-        Linkedin
-        <ArrowUpRight className="inline" size={15} />
-      </a>
-    </div>
+      <p className="text-muted-foreground">{project.tag}</p>
+      <p>{project.desc} </p>
+    </>
   )
 }
