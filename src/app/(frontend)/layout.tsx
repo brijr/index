@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <Section className="py-6 md:py-6">
       <Container className="py-6 md:py-6">
-        <nav className="flex gap-4 justify-between items-center uppercase">
+        <nav className="flex gap-4 justify-between items-start uppercase">
           <div>
             <h1>Bridger Tower *</h1>
             <SocialLinks />

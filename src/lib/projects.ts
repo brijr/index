@@ -1,31 +1,36 @@
 export interface ProjectProps {
   name: string
+  role?: string
   href: string
   desc: string
-  tag: string
+  tag: 'software' | 'open source' | 'ventures'
 }
 
 export const projects: ProjectProps[] = [
   {
     name: 'Outr',
+    role: 'Design Engineer, AI Developer',
     href: 'https://outr.ai',
     desc: 'Outr is am AI-native platform for personalize cold outreach and email domain managemet. Built using the latest technology using agentic workflows and durable objects.',
     tag: 'software',
   },
   {
     name: 'Router.so',
+    role: 'Design Engineer',
     href: 'https://router.so',
     desc: 'Router.so is an open-source form backend for developers and technical marketing agencies. Capture leads, create endpoints, and generate forms from a central dashboard. ',
     tag: 'software',
   },
   {
     name: 'WaveFinder',
+    role: 'Design Engineer, AI Developer',
     href: 'https://wavefinder.io',
     desc: 'WaveFinder provides technical marketers with a platform to run message testing at scale. Use AI agents to generate Facebook ads and creative and post directly to Facebook ads through direct integration. Monitor results and select winners.',
     tag: 'software',
   },
   {
     name: 'Swyftfin',
+    role: 'Design Engineer',
     href: 'https://swyftfin.com',
     desc: 'Financing for home services',
     tag: 'software',
