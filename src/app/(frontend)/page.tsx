@@ -29,13 +29,13 @@ export default function Index() {
         <div className="sm:grid flex flex-col gap-6 grid-cols-3 divide-y sm:divide-x border">
           {/* Software */}
           <div className="flex flex-col p-6 group">
-            <h2 className="text-muted-foreground mb-3 group-hover:text-foreground transition-all">
+            <h2 className="text-muted-foreground mb-3 sm:group-hover:text-foreground transition-all">
               Software
             </h2>
             <div className="grid gap-2">
               {projects.software.map((project: string) => (
                 <a
-                  className="transition-colors group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
@@ -48,13 +48,13 @@ export default function Index() {
 
           {/* Open Source  */}
           <div className="flex flex-col p-6 group">
-            <h2 className="text-muted-foreground mb-3 group-hover:text-foreground transition-all">
+            <h2 className="text-muted-foreground mb-3 sm:group-hover:text-foreground transition-all">
               Open Source
             </h2>
             <div className="grid gap-2">
               {projects.open_source.map((project: string) => (
                 <a
-                  className="transition-colors group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
@@ -67,13 +67,13 @@ export default function Index() {
 
           {/* Other */}
           <div className="flex flex-col p-6 group">
-            <h2 className="text-muted-foreground mb-3 group-hover:text-foreground transition-all">
+            <h2 className="text-muted-foreground mb-3 sm:group-hover:text-foreground transition-all">
               Other
             </h2>
             <div className="grid gap-2">
               {projects.other.map((project: string) => (
                 <a
-                  className="transition-colors group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
