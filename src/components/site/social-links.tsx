@@ -5,14 +5,6 @@ export const SocialLinks = () => {
     <div className="flex flex-wrap gap-3 uppercase text-muted-foreground">
       <a
         className="hover:text-foreground hover:underline underline-offset-2 transition-all"
-        href="https://resume.bridger.to"
-        target="_blank"
-      >
-        Resume
-        <ArrowUpRight className="inline" size={15} />
-      </a>
-      <a
-        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
         href="https://github.com/brijr"
         target="_blank"
       >
@@ -33,6 +25,14 @@ export const SocialLinks = () => {
         target="_blank"
       >
         Linkedin
+        <ArrowUpRight className="inline" size={15} />
+      </a>
+      <a
+        className="hover:text-foreground hover:underline underline-offset-2 transition-all"
+        href="https://resume.bridger.to"
+        target="_blank"
+      >
+        Resume
         <ArrowUpRight className="inline" size={15} />
       </a>
     </div>

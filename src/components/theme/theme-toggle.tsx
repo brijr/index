@@ -20,7 +20,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <Button variant="outline" size="icon" className="bg-accent/30 group" onClick={toggleTheme}>
+    <Button variant="ghost" size="icon" className="bg-accent/30 group" onClick={toggleTheme}>
       <motion.div animate={controls}>
         <Lamp className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all group-hover:text-foreground" />
       </motion.div>

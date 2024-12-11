@@ -1,6 +1,6 @@
 import '../globals.css'
 
-import { Geist_Mono as Font } from 'next/font/google'
+import { Inter as Font } from 'next/font/google'
 import type { Metadata } from 'next'
 import { pay } from 'site.config'
 import { ThemeProvider } from '@/components/theme/theme-provider'
@@ -49,7 +49,7 @@ const Header = () => {
             <h1>Bridger Tower *</h1>
             <SocialLinks />
           </div>
-          <h2 className="text-muted-foreground">Designer / Engineer</h2>
+          <h2 className="text-muted-foreground sr-only sm:not-sr-only">Designer / Engineer</h2>
         </nav>
       </Container>
     </Section>
