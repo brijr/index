@@ -58,12 +58,10 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <Section className="py-6 md:py-6">
+    <Section className="py-6 md:py-6 uppercase">
       <Container className="py-6 md:py-6">
         <footer className="text-muted-foreground flex gap-2 justify-between items-center">
-          <p>
-            © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
-          </p>
+          <p>© {pay.name}, 2025 / email: bridger at wip.ac</p>
           <ThemeToggle />
         </footer>
       </Container>
