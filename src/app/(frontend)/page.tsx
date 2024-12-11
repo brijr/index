@@ -35,7 +35,7 @@ export default function Index() {
             <div className="grid gap-2">
               {projects.software.map((project: string) => (
                 <a
-                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground sm:hover:!text-foreground sm:hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
@@ -54,7 +54,7 @@ export default function Index() {
             <div className="grid gap-2">
               {projects.open_source.map((project: string) => (
                 <a
-                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground sm:hover:!text-foreground sm:hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
@@ -73,7 +73,7 @@ export default function Index() {
             <div className="grid gap-2">
               {projects.other.map((project: string) => (
                 <a
-                  className="transition-colors sm:group-hover:text-muted-foreground hover:!text-foreground hover:underline underline-offset-2"
+                  className="transition-colors sm:group-hover:text-muted-foreground sm:hover:!text-foreground sm:hover:underline underline-offset-2"
                   href={`https://${project}`}
                   key={project}
                 >
