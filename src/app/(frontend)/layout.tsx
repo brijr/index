@@ -60,7 +60,7 @@ const Footer = () => {
   return (
     <Section className="py-6 md:py-6 uppercase">
       <Container className="py-6 md:py-6">
-        <footer className="text-muted-foreground flex gap-2 justify-between items-center">
+        <footer className="text-muted-foreground sm:flex gap-2 justify-between items-center">
           <p>© {pay.name}, 2025 / email: bridger at wip.ac</p>
           <ThemeToggle />
         </footer>
