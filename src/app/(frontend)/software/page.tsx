@@ -7,7 +7,7 @@ const content = {
       name: 'WaveFinder',
       href: 'https://wavefinder.io',
       description:
-        'Create and test messages on Facebook with an AI advertising companion. Optimize your marketing campaigns using real data and machine learning. Find outliers in hours, not months.',
+        'Advertising message testing at scale powered by AI. Use the latest LLMs to generate headlines, copy, images, and deploy directly to Facebook ads.',
     },
     {
       name: 'Outr',
@@ -19,19 +19,19 @@ const content = {
       name: 'SwyftFin',
       href: 'https://swyftfin.com',
       description:
-        '680+ Stars, Headless Wordpress Starter built with the Next.js App Router and React Server Components. Used in production by hundreds of sites.',
+        'Sales software and PWA to help home improvement sales reps get personalized loans for their customers in seconds.',
     },
     {
       name: 'Router',
       href: 'https://router.so',
       description:
-        '210+ Stars, Form backend and lead router for marketing developers and GTM teams. Create an endpoint for leads in seconds. Generate shadcn/ui forms.',
+        'Form backend and lead router for marketing developers and GTM teams. Create an endpoint for leads in seconds. Generate shadcn/ui forms.',
     },
     {
       name: 'Abstract',
       href: 'https://abstract.ac',
       description:
-        '20+ Stars, A modern full-stack starter template powered by PayloadCMS and Next.js. Built with performance and developer experience in mind.',
+        'Portfolios for Designers, Photographers, and Artists. Create your personal website and present your work. Coming Early 2025.',
     },
   ],
 }
