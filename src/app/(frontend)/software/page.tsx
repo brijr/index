@@ -1,7 +1,7 @@
 import { Header } from '@/components/site/header'
 
 const content = {
-  name: 'Open Source',
+  name: 'Software',
   projects: [
     {
       name: 'WaveFinder',

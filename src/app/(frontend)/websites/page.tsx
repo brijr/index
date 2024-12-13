@@ -1,37 +1,37 @@
 import { Header } from '@/components/site/header'
 
 const content = {
-  name: 'Open Source',
+  name: 'Websites',
   projects: [
     {
-      name: 'Router',
-      href: 'https://router.so',
-      description:
-        '210+ Stars, Form backend and lead router for marketing developers and GTM teams. Create an endpoint for leads in seconds. Generate shadcn/ui forms.',
+      name: 'Design Books',
+      href: 'https://designbooks.org',
+      description: 'An open source collection of the best books on design curated by me.',
     },
     {
-      name: 'Components',
-      href: 'https://components.bridger.to',
-      description:
-        '280+ Stars, Collection of website components (heros, features, CTAs, etc.) built with React, Typescript, Tailwind, and shadcn/ui.',
+      name: 'Design for AI',
+      href: 'https://designforai.org',
+      description: 'WIP. Collection of thoughts and resources on design for AI.',
     },
     {
-      name: 'Craft Design System',
-      href: 'https://github.com/brijr/craft-ds',
-      description:
-        '180+ Stars, A lightweight, component-based design system for React, Typescript, Tailwind, and Next.js, optimized for speed and flexibility.',
+      name: 'Travel Mellow',
+      href: 'https://travelmellow.com',
+      description: 'A travel publication run by my wife, Rileigh Ellison. Built with Next-WP.',
     },
     {
-      name: 'Next-WP',
-      href: 'https://wp.9d8.dev',
-      description:
-        '680+ Stars, Headless Wordpress Starter built with the Next.js App Router and React Server Components. Used in production by hundreds of sites.',
+      name: 'ASAP Engineering',
+      href: 'https://asap.engineering',
+      description: 'A podcast for technical entrepreneurs by Cameron Youngblood and I.',
     },
     {
-      name: 'Payload Starter',
-      href: 'https://github.com/9d8dev/pay',
-      description:
-        '20+ Stars, A modern full-stack starter template powered by PayloadCMS and Next.js. Built with performance and developer experience in mind.',
+      name: 'Alpine Codex',
+      href: 'https://alpinecodex.com',
+      description: 'Homepage for Alpine Codex.',
+    },
+    {
+      name: '9d8',
+      href: 'https://9d8.dev',
+      description: 'Homepage for 9d8.',
     },
   ],
 }
