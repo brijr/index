@@ -68,5 +68,5 @@
 }
 
 a {
-  @apply font-normal hover:text-muted-foreground transition-all;
+  @apply hover:text-muted-foreground transition-all underline underline-offset-2 decoration-muted-foreground;
 }

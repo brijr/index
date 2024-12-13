@@ -17,9 +17,8 @@ const Intro = () => {
     <div className="space-y-2">
       <h2 className="text-muted-foreground">Intro</h2>
       <h3>
-        Designer and software engineer exploring{' '}
-        <span className="highlight">user interface design</span>, applied artificial intelligence,
-        and human computer interaction.
+        Designer and software engineer exploring <b>user interface design</b>,{' '}
+        <b>applied artificial intelligence</b>, and <b>human computer interaction</b>.
       </h3>
       <h4>
         I currently work at <a href="https://9d8.dev">9d8</a> and{' '}
