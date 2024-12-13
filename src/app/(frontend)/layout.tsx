@@ -33,14 +33,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          <main>
+          <main className="flex flex-col min-h-[100vh]">
             <Section className="py-0">
               <Container className="space-y-12">
                 <Nav />
                 {children}
-                <Footer />
               </Container>
             </Section>
+            <Footer />
           </main>
         </ThemeProvider>
       </body>
@@ -74,10 +74,14 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <footer className="pt-24 text-muted-foreground text-sm flex gap-2 justify-between items-center">
-      <Links />
-      <ThemeToggle />
-    </footer>
+    <Section className="mt-auto">
+      <Container>
+        <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
+          <Links />
+          <ThemeToggle />
+        </footer>
+      </Container>
+    </Section>
   )
 }
 
