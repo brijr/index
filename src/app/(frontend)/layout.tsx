@@ -26,7 +26,7 @@ const font = Font({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={font.className} suppressHydrationWarning>
+    <html lang="en" className={`${font.className} no-scrollbar`} suppressHydrationWarning>
       <body className="min-h-screen font-light bg-accent selection:bg-indigo-100 dark:selection:bg-indigo-900">
         <ThemeProvider
           attribute="class"
