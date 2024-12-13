@@ -3,28 +3,23 @@ import { ArrowUpRight } from 'lucide-react'
 
 import { projects } from '@/lib/projects'
 
+const about =
+  "I'm a designer and software engineer exploring user interface design, applied artificial intelligence, and human computer interaction."
+
 // export const revalidate = 600
 
 export default function Index() {
   return (
     <Section className="uppercase">
       <Container className="grid gap-20">
-        <h4 className="p-6 border group text-muted-foreground sm:text-foreground sm:hover:text-muted-foreground transition-all">
-          I&apos;m a{' '}
-          <span className="text-foreground sm:text-foreground sm:group-hover:text-foreground">
-            designer and software engineer
-          </span>{' '}
-          specializing in creating intuitive, high-performance software and websites that merge
-          visual excellence with practical functionality. I am passionate about{' '}
-          <span className="text-foreground sm:text-foreground sm:group-hover:text-foreground">
-            user interface design
-          </span>{' '}
-          and{' '}
-          <span className="text-foreground sm:text-foreground sm:group-hover:text-foreground">
-            human computer interaction
-          </span>
-          .
-        </h4>
+        <div className="p-6 border">
+          <h3>{about}</h3>
+          <h4>
+            I currently work at <a href="https://9d8.dev">9d8</a> and{' '}
+            <a href="https://ampry.com">Ampry</a> designing and developing marketing and sales
+            software.
+          </h4>
+        </div>
 
         <div className="sm:grid flex flex-col gap-6 grid-cols-3 divide-y sm:divide-x border">
           {/* Software */}
