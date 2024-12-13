@@ -58,8 +58,8 @@ const Nav = () => {
           className="invert dark:invert-0 mb-8"
           src={Logo}
           alt="Bridger Tower Logo"
-          width={48}
-          height={39.09}
+          width={36}
+          height={29.31}
         />
       </Link>{' '}
       <div className="flex gap-2 text-muted-foreground text-sm">
