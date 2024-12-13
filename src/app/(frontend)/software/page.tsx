@@ -7,7 +7,7 @@ const content = {
       name: 'WaveFinder',
       href: 'https://wavefinder.io',
       description:
-        '280+ Stars, Collection of website components (heros, features, CTAs, etc.) built with React, Typescript, Tailwind, and shadcn/ui.',
+        'Create and test messages on Facebook with an AI advertising companion. Optimize your marketing campaigns using real data and machine learning. Find outliers in hours, not months.',
     },
     {
       name: 'Outr',
@@ -42,7 +42,7 @@ export default function Page() {
       <Header page={content.name} />
       <div className="grid gap-8">
         {content.projects.map((project) => (
-          <div className="reset-link cursor-pointer space-y-2" key={project.href}>
+          <div className="reset-link space-y-2" key={project.href}>
             <a target="_blank" href={project.href}>
               {project.name}
             </a>

@@ -42,7 +42,7 @@ export default function Page() {
       <Header page={content.name} />
       <div className="grid gap-8">
         {content.projects.map((project) => (
-          <div className="reset-link cursor-pointer space-y-2" key={project.href}>
+          <div className="reset-link space-y-2" key={project.href}>
             <a target="_blank" href={project.href}>
               {project.name}
             </a>
