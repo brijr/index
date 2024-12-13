@@ -1,5 +1,5 @@
-@tailwind base;
 @tailwind components;
+@tailwind base;
 @tailwind utilities;
 
 @layer base {
@@ -57,6 +57,7 @@
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
@@ -65,6 +66,7 @@
     @apply bg-background text-foreground;
   }
 }
+
 a {
-  @apply hover:text-foreground hover:underline underline-offset-2 transition-all;
+  @apply font-normal hover:text-muted-foreground transition-all;
 }

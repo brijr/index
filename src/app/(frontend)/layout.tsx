@@ -21,7 +21,7 @@ const font = Font({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="min-h-screen font-light">
+      <body className="min-h-screen font-light bg-accent selection:bg-indigo-100 dark:selection:bg-indigo-900">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -57,7 +57,10 @@ const Header = () => {
 const Footer = () => {
   return (
     <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
-      <p>© {pay.name}, 2025</p>
+      <div>
+        <p>bridger.to / </p>
+        <p>designer</p>
+      </div>
       <ThemeToggle />
     </footer>
   )
