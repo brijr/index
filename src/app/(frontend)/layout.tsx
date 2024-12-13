@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           disableTransitionOnChange
         >
           <main>
-            <Section>
+            <Section className="py-0">
               <Container className="space-y-12">
                 <Nav />
                 {children}
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Nav = () => {
   return (
-    <div className="sm:flex gap-4 justify-between items-start">
+    <div className="flex gap-4 justify-between items-start">
       <Link className="reset-link" href="/">
         <Image
           className="invert dark:invert-0 mb-8"
