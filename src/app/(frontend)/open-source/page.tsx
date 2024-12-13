@@ -18,17 +18,20 @@ const content = {
     {
       name: 'Craft Design System',
       href: 'https://github.com/brijr/craft-ds',
-      description: 'WordPress as a headless CMS for Next.js',
+      description:
+        '180+ Stars, A lightweight, component-based design system for React, Typescript, Tailwind, and Next.js, optimized for speed and flexibility.',
     },
     {
       name: 'Next-WP',
-      href: 'https://github.com/9d8dev/next-wp',
-      description: 'WordPress as a headless CMS for Next.js',
+      href: 'https://wp.9d8.dev',
+      description:
+        '680+ Stars, Headless Wordpress Starter built with the Next.js App Router and React Server Components. Used in production by hundreds of sites.',
     },
     {
       name: 'Payload Starter',
       href: 'https://github.com/9d8dev/pay',
-      description: 'WordPress as a headless CMS for Next.js',
+      description:
+        '20+ Stars, A modern full-stack starter template powered by PayloadCMS and Next.js. Built with performance and developer experience in mind.',
     },
   ],
 }
