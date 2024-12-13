@@ -2,6 +2,7 @@ import '../globals.css'
 
 import { pay } from 'site.config'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </main>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
