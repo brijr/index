@@ -3,6 +3,10 @@ import '../globals.css'
 import { pay } from 'site.config'
 import type { Metadata } from 'next'
 
+import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '@/public/logo.svg'
+
 import { Inter as Font } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
@@ -32,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>
             <Section>
               <Container className="space-y-12">
+                <Nav />
                 {children}
                 <Footer />
               </Container>
@@ -40,6 +45,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </ThemeProvider>
       </body>
     </html>
+  )
+}
+
+const Nav = () => {
+  return (
+    <div className="sm:flex gap-4 justify-between items-start">
+      <Link className="reset-link" href="/">
+        <Image
+          className="invert dark:invert-0 mb-8"
+          src={Logo}
+          alt="Bridger Tower Logo"
+          width={48}
+          height={39.09}
+        />
+      </Link>{' '}
+      <div className="flex gap-2 text-muted-foreground text-sm">
+        <a className="reset-link hover:text-foreground" href="https://github.com/brijr">
+          GitHub
+        </a>
+        <a className="reset-link hover:text-foreground" href="https://x.com/bridgertower">
+          Twitter
+        </a>
+      </div>
+    </div>
   )
 }
 

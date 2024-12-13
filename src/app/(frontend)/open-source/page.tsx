@@ -1,3 +1,5 @@
+import { Header } from '@/components/site/header'
+
 const content = {
   name: 'Open Source',
   projects: [
@@ -33,7 +35,7 @@ const content = {
 export default function Page() {
   return (
     <>
-      <h1>{content.name}</h1>
+      <Header page={content.name} />
       <div className="grid gap-4">
         {content.projects.map((project) => (
           <a className="reset-link cursor-pointer" key={project.href}>
