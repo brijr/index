@@ -8,8 +8,6 @@ import { ThemeProvider } from '@/components/theme/theme-provider'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Section, Container } from '@/components/craft'
 
-import Link from 'next/link'
-
 export const metadata: Metadata = {
   title: pay.title,
   description: pay.desc,
