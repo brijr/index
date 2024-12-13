@@ -56,11 +56,8 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
-      <div>
-        <p>bridger.to / </p>
-        <Links />
-      </div>
+    <footer className="pt-24 text-muted-foreground text-sm flex gap-2 justify-between items-center">
+      <Links />
       <ThemeToggle />
     </footer>
   )
@@ -69,7 +66,7 @@ const Footer = () => {
 const Links = () => {
   return (
     <div className="flex gap-2 lowercase">
-      <h2 className="sr-only">Links</h2>
+      <p>bridger.to /</p>
       <a href="https://github.com/brijr" target="_blank">
         GitHub
       </a>
