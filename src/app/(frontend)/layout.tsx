@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           <main>
             <Section>
-              <Container className="space-y-8">
+              <Container className="space-y-12">
                 <Header />
                 {children}
                 <Footer />
