@@ -59,11 +59,8 @@ const Links = () => {
     <div className="flex lowercase gap-2">
       <p>bridger.to</p>
       <p>/</p>
-      <a href="https://github.com/brijr" target="_blank">
-        GitHub
-      </a>
-      <a href="https://x.com/bridgertower" target="_blank">
-        X (Twitter)
+      <a href="https://youtube.com/@bridgertower" target="_blank">
+        YouTube
       </a>
       <a href="https://linkedin.com/in/brijr" target="_blank">
         LinkedIn
