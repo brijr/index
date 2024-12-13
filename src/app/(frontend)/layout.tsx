@@ -6,7 +6,6 @@ import { pay } from 'site.config'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Section, Container } from '@/components/craft'
-import { SocialLinks } from '@/components/site/social-links'
 
 export const metadata: Metadata = {
   title: pay.title,
@@ -30,9 +29,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           disableTransitionOnChange
         >
           <main>
-            <Header />
-            {children}
-            <Footer />
+            <Section>
+              <Container className="space-y-8">
+                <Header />
+                {children}
+                <Footer />
+              </Container>
+            </Section>
           </main>
         </ThemeProvider>
       </body>
@@ -42,29 +45,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <Section className="py-6 md:py-6">
-      <Container className="py-6 md:py-6">
-        <nav className="sm:flex gap-4 justify-between items-start uppercase">
-          <div>
-            <h1>Bridger Tower *</h1>
-            <SocialLinks />
-          </div>
-          <h2 className="text-muted-foreground sr-only sm:not-sr-only">Designer / Engineer</h2>
-        </nav>
-      </Container>
-    </Section>
+    <nav className="sm:flex gap-4 justify-between items-start">
+      <div>
+        <h1>Bridger Tower *</h1>
+      </div>
+      <h2 className="text-muted-foreground sr-only sm:not-sr-only">Designer / Engineer</h2>
+    </nav>
   )
 }
 
 const Footer = () => {
   return (
-    <Section className="py-6 md:py-6 uppercase">
-      <Container className="py-6 md:py-6">
-        <footer className="text-muted-foreground flex gap-2 justify-between items-center">
-          <p>© {pay.name}, 2025</p>
-          <ThemeToggle />
-        </footer>
-      </Container>
-    </Section>
+    <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
+      <p>© {pay.name}, 2025</p>
+      <ThemeToggle />
+    </footer>
   )
 }
