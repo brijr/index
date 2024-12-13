@@ -21,12 +21,13 @@ const Intro = () => {
         <b>applied artificial intelligence</b>, and <b>human computer interaction</b>.
       </h3>
       <h4>
-        I currently work at <a href="https://9d8.dev">9d8</a> and{' '}
+        Currently I work at <a href="https://9d8.dev">9d8</a> and{' '}
         <a className="link" href="https://ampry.com">
           Ampry
         </a>{' '}
-        designing and developing marketing and sales software. I build tools for designers at{' '}
-        <a href="https://wipdes.com">WIP</a>.
+        building marketing and sales software. I build tools for designers at{' '}
+        <a href="https://wipdes.com">WIP</a>. Previously I worked at{' '}
+        <a href="https://www.tackle.io">Tackle</a> and <a href="https://zion.surf">Zion</a>.
       </h4>
     </div>
   )
