@@ -1,11 +1,38 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import Logo from '@/public/logo.svg'
 
 export default function Index() {
   return (
     <>
+      <Nav />
       <Intro />
       <Work />
     </>
+  )
+}
+
+const Nav = () => {
+  return (
+    <div className="sm:flex gap-4 justify-between items-start">
+      <Link className="reset-link" href="/">
+        <Image
+          className="invert dark:invert-0 mb-8"
+          src={Logo}
+          alt="Bridger Tower Logo"
+          width={48}
+          height={39.09}
+        />
+      </Link>{' '}
+      <div className="flex gap-2 text-muted-foreground text-sm">
+        <a className="reset-link hover:text-foreground" href="https://github.com/brijr">
+          GitHub
+        </a>
+        <a className="reset-link hover:text-foreground" href="https://x.com/bridgertower">
+          Twitter
+        </a>
+      </div>
+    </div>
   )
 }
 

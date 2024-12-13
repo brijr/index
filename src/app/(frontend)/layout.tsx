@@ -34,7 +34,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>
             <Section>
               <Container className="space-y-12">
-                <Header />
                 {children}
                 <Footer />
               </Container>
@@ -43,17 +42,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </ThemeProvider>
       </body>
     </html>
-  )
-}
-
-const Header = () => {
-  return (
-    <nav className="sm:flex gap-4 justify-between items-start">
-      <Link className="reset-link" href="/">
-        <h1>Bridger Tower *</h1>
-      </Link>
-      <h2 className="text-muted-foreground sr-only sm:not-sr-only">Designer / Engineer</h2>
-    </nav>
   )
 }
 
