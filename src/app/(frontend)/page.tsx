@@ -15,7 +15,7 @@ export default function Index() {
 const Intro = () => {
   return (
     <div className="space-y-2">
-      <h2 className="text-muted-foreground">Intro</h2>
+      <h2 className="sr-only">Intro</h2>
       <h3>
         Designer and software engineer exploring <b>user interface design</b>,{' '}
         <b>applied artificial intelligence</b>, and <b>human computer interaction</b>.
@@ -35,7 +35,7 @@ const Intro = () => {
 const Work = () => {
   return (
     <div className="grid gap-2">
-      <h2 className="text-muted-foreground">Work</h2>
+      <h2 className="sr-only">Work</h2>
       <Link href="/open-source">Open Source</Link>
       <Link href="/software">Software</Link>
       <Link href="/websites">Websites</Link>

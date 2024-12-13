@@ -6,13 +6,14 @@ const content = {
     {
       name: 'Router',
       href: 'https://router.so',
-      description: 'Open-source form backend and lead router',
+      description:
+        '210+ Stars, Form backend and lead router for marketing developers and GTM teams. Create an endpoint for leads in seconds. Generate shadcn/ui forms.',
     },
     {
-      name: 'Website Components',
+      name: 'Components',
       href: 'https://components.bridger.to',
       description:
-        'Collection of website components built with React, Typescript, Tailwind, and Shadcn',
+        '280+ Stars, Collection of website components (heros, features, CTAs, etc.) built with React, Typescript, Tailwind, and shadcn/ui.',
     },
     {
       name: 'Craft Design System',
@@ -25,7 +26,7 @@ const content = {
       description: 'WordPress as a headless CMS for Next.js',
     },
     {
-      name: 'Payload Next.js Starter',
+      name: 'Payload Starter',
       href: 'https://github.com/9d8dev/pay',
       description: 'WordPress as a headless CMS for Next.js',
     },
@@ -36,12 +37,12 @@ export default function Page() {
   return (
     <>
       <Header page={content.name} />
-      <div className="grid gap-4">
+      <div className="grid gap-8">
         {content.projects.map((project) => (
-          <a className="reset-link cursor-pointer" key={project.href}>
-            <h2>{project.name}</h2>
+          <div className="reset-link cursor-pointer space-y-2" key={project.href}>
+            <a href={project.href}>{project.name}</a>
             <p className="text-muted-foreground">{project.description}</p>
-          </a>
+          </div>
         ))}
       </div>
     </>
