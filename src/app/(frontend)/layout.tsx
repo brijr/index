@@ -68,8 +68,9 @@ const Footer = () => {
 
 const Links = () => {
   return (
-    <div className="flex gap-2 lowercase">
-      <p>bridger.to /</p>
+    <div className="flex lowercase gap-2">
+      <p>bridger.to</p>
+      <p>/</p>
       <a href="https://github.com/brijr" target="_blank">
         GitHub
       </a>
