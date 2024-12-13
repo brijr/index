@@ -8,7 +8,7 @@ export const Header = ({ page }: Props) => {
   return (
     <div className="sm:flex gap-4 justify-between items-start">
       {page ? (
-        <h1 className="flex gap-2">
+        <h1 className="flex gap-2 font-normal">
           <Link className="reset-link text-muted-foreground hover:text-foreground" href="/">
             Bridger Tower
           </Link>
@@ -16,7 +16,7 @@ export const Header = ({ page }: Props) => {
           {page}
         </h1>
       ) : (
-        <h1 className="reset-link">Bridger Tower</h1>
+        <h1 className="reset-link font-normal">Bridger Tower</h1>
       )}
     </div>
   )
