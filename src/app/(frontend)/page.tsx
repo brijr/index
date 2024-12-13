@@ -7,7 +7,6 @@ export default function Index() {
     <>
       <Intro />
       <Work />
-      <Links />
     </>
   )
 }
@@ -39,26 +38,6 @@ const Work = () => {
       <Link href="/open-source">Open Source</Link>
       <Link href="/software">Software</Link>
       <Link href="/websites">Websites</Link>
-    </div>
-  )
-}
-
-const Links = () => {
-  return (
-    <div className="grid gap-2">
-      <h2 className="text-muted-foreground">Links</h2>
-      <a href="https://github.com/brijr" target="_blank">
-        github.com/brijr
-      </a>
-      <a href="https://x.com/bridgertower" target="_blank">
-        x.com/brijr
-      </a>
-      <a href="https://linkedin.com/in/brijr" target="_blank">
-        linkedin.com/in/brijr
-      </a>
-      <a href="https://resume.bridger.to" target="_blank">
-        resume.bridger.to
-      </a>
     </div>
   )
 }

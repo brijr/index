@@ -59,9 +59,30 @@ const Footer = () => {
     <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
       <div>
         <p>bridger.to / </p>
-        <p>designer</p>
+        <Links />
       </div>
       <ThemeToggle />
     </footer>
+  )
+}
+
+const Links = () => {
+  return (
+    <div className="flex gap-2 lowercase">
+      <h2 className="sr-only">Links</h2>
+      <a href="https://github.com/brijr" target="_blank">
+        GitHub
+      </a>
+      <a href="https://x.com/bridgertower" target="_blank">
+        X (Twitter)
+      </a>
+      <a href="https://linkedin.com/in/brijr" target="_blank">
+        LinkedIn
+      </a>
+      <a href="https://resume.bridger.to" target="_blank">
+        Resume
+      </a>
+      <a href="mailto:bridgertower@gmail.com">Email</a>
+    </div>
   )
 }
