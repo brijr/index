@@ -1,11 +1,14 @@
 import '../globals.css'
 
-import { Inter as Font } from 'next/font/google'
-import type { Metadata } from 'next'
 import { pay } from 'site.config'
+import type { Metadata } from 'next'
+
+import { Inter as Font } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Section, Container } from '@/components/craft'
+
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: pay.title,
@@ -46,9 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 const Header = () => {
   return (
     <nav className="sm:flex gap-4 justify-between items-start">
-      <div>
+      <Link className="reset-link" href="/">
         <h1>Bridger Tower *</h1>
-      </div>
+      </Link>
       <h2 className="text-muted-foreground sr-only sm:not-sr-only">Designer / Engineer</h2>
     </nav>
   )

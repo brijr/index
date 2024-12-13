@@ -1,7 +1,5 @@
 import Link from 'next/link'
 
-import { Link2 } from 'lucide-react'
-
 export default function Index() {
   return (
     <>

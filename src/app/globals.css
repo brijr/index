@@ -68,5 +68,9 @@
 }
 
 a {
-  @apply hover:text-muted-foreground transition-all underline underline-offset-2 decoration-muted-foreground;
+  @apply underline underline-offset-2 decoration-foreground/20 hover:decoration-foreground/80 transition-all;
+}
+
+.reset-link {
+  @apply no-underline;
 }
