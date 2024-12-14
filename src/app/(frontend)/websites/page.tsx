@@ -16,7 +16,7 @@ const content = {
     {
       name: 'Travel Mellow',
       href: 'https://travelmellow.com',
-      description: 'A travel publication run by my wife, Rileigh Ellison. Built with Next-WP.',
+      description: 'A travel publication run by my wife, Rileigh. Built with Next-WP.',
     },
     {
       name: 'ASAP Engineering',
