@@ -7,7 +7,7 @@ const content = {
       name: 'WaveFinder',
       href: 'https://wavefinder.io',
       description:
-        'Advertising message testing at scale powered by AI. Use the latest LLMs to generate headlines, copy, images, and deploy directly to Facebook ads.',
+        'Advertising message testing at scale powered by AI. Use the latest LLMs to generate headlines, copy, images, and deploy directly to Facebook.',
     },
     {
       name: 'Outr',
