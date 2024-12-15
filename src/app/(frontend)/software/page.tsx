@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <>
       <Header page={content.name} />
-      <div className="grid gap-8">
+      <div className="grid gap-8 fade-in-up delay-300">
         {content.projects.map((project) => (
           <div className="reset-link space-y-2" key={project.href}>
             <a target="_blank" href={project.href}>

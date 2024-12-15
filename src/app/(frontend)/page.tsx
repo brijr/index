@@ -14,7 +14,7 @@ export default function Index() {
 
 const Intro = () => {
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 fade-in-up delay-300">
       <h2 className="sr-only">Intro</h2>
       <h3>
         Designer and software engineer exploring <b>user interface design</b>,{' '}
@@ -35,7 +35,7 @@ const Intro = () => {
 
 const Work = () => {
   return (
-    <div className="grid gap-2">
+    <div className="grid gap-2 fade-in-up delay-500">
       <h2 className="sr-only">Work</h2>
       <Link href="/open-source">Open Source</Link>
       <Link href="/software">Software</Link>

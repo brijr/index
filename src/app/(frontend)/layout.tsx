@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Nav = () => {
   return (
-    <div className="flex gap-4 justify-between items-start">
+    <div className="fade-in-up flex gap-4 justify-between items-start">
       <Link className="reset-link" href="/">
         <Image
           className="invert dark:invert-0 mb-8"
@@ -76,7 +76,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <Section className="mt-auto">
+    <Section className="mt-auto fade-in-up delay-700">
       <Container>
         <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
           <Links />
