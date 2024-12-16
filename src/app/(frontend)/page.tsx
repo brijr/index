@@ -17,7 +17,7 @@ const Intro = () => {
     <div className="space-y-2 fade-in-up delay-300">
       <h2 className="sr-only">Intro</h2>
       <h3>
-        Designer and software engineer exploring <b>user interface design</b>,{' '}
+        Product designer and software engineer exploring <b>user interface design</b>,{' '}
         <b>applied artificial intelligence</b>, and <b>human computer interaction</b>.
       </h3>
       <h4>
