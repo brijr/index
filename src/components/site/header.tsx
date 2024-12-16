@@ -6,17 +6,17 @@ interface Props {
 
 export const Header = ({ page }: Props) => {
   return (
-    <div className="fade-in-up delay-100 sm:flex gap-4 justify-between items-start">
+    <div className="sm:flex gap-4 justify-between items-start">
       {page ? (
         <h1 className="flex gap-2 font-normal">
           <Link className="reset-link text-muted-foreground hover:text-foreground" href="/">
             Bridger Tower
           </Link>
-          <span>/</span>
-          {page}
+          <span className="fade-in-up delay-100">/</span>
+          <span className="fade-in-up delay-100">{page}</span>
         </h1>
       ) : (
-        <h1 className="reset-link font-normal">Bridger Tower</h1>
+        <h1 className="fade-in-up delay-100 reset-link font-normal">Bridger Tower</h1>
       )}
     </div>
   )
