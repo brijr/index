@@ -21,4 +21,3 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     </>
   )
 }
-s
