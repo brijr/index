@@ -1,7 +1,7 @@
 /* craft.css - Comprehensive typography styling with shadcn colors */
 
 .container {
-  @apply max-w-5xl mx-auto p-6 sm:p-8;
+  @apply max-w-2xl mx-auto p-6 sm:p-8;
 }
 
 .section {
@@ -279,7 +279,7 @@
     .task-list-item {
       @apply flex items-center;
 
-      input[type="checkbox"] {
+      input[type='checkbox'] {
         @apply mr-2;
       }
     }

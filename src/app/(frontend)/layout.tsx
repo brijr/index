@@ -1,4 +1,5 @@
 import '../globals.css'
+import '@/components/craft/craft.css'
 
 import { pay } from 'site.config'
 import type { Metadata } from 'next'
