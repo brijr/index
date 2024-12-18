@@ -15,7 +15,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <Header page={post.title} />
-      <Article>
+      <Article className="fade-in-up delay-300">
         <RichText data={post.content} />
       </Article>
     </>
