@@ -17,7 +17,7 @@ const content = {
     },
     {
       name: 'Craft Design System',
-      href: 'https://github.com/brijr/craft-ds',
+      href: 'https://craft.bridger.to',
       description:
         '180+ Stars, A lightweight, component-based design system for React, Typescript, Tailwind, and Next.js, optimized for speed and flexibility.',
     },
