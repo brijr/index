@@ -3,6 +3,8 @@
 @theme {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --color-orange: var(--orange);
+    --color-orange-hover: var(--orange-hover);
 }
 
 @layer base {
@@ -18,6 +20,8 @@
 :root {
     --background: rgb(206, 205, 195);
     --foreground: rgb(16, 15, 15);
+    --orange: rgb(218, 112, 44);
+    --orange-hover: rgb(188, 82, 21);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +37,10 @@ body {
     font-family: Inter, Helvetica, sans-serif;
 }
 
-main {
-    @apply max-w-2xl mx-auto;
+b {
+    font-weight: 600;
+}
+
+a {
+    @apply text-orange hover:text-orange-hover transition-all;
 }

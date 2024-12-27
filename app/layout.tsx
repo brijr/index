@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased scroll-smooth selection:bg-indigo-100 dark:selection:bg-indigo-900`}
+        className={`${font.className} antialiased scroll-smooth selection:bg-orange-100 dark:selection:bg-orange-600/50 p-6 sm:p-12 lg:p-24`}
       >
-        <main>
+        <main className="max-w-2xl mx-auto space-y-12">
           <Nav />
           {children}
         </main>
@@ -40,7 +40,7 @@ export default function RootLayout({
 const Nav = () => {
   return (
     <nav className="fade-in-up flex gap-4 justify-between items-start">
-      <Link className="reset-link" href="/">
+      <Link href="/">
         <Image
           className="invert dark:invert-0 mb-8"
           src={Logo}
@@ -48,20 +48,10 @@ const Nav = () => {
           width={36}
           height={29.31}
         />
-      </Link>{" "}
-      <div className="flex gap-2 text-muted-foreground text-sm">
-        <a
-          className="reset-link hover:text-foreground"
-          href="https://github.com/brijr"
-        >
-          GitHub
-        </a>
-        <a
-          className="reset-link hover:text-foreground"
-          href="https://x.com/bridgertower"
-        >
-          X.com
-        </a>
+      </Link>
+      <div className="flex gap-3 text-sm">
+        <a href="https://github.com/brijr">GitHub</a>
+        <a href="https://x.com/bridgertower">Twitter</a>
       </div>
     </nav>
   );
