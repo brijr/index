@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased scroll-smooth selection:bg-orange-100 dark:selection:bg-orange-600/50 p-6 sm:p-12 lg:p-24`}
+        className={`${font.className} bg-background text-foreground antialiased scroll-smooth p-6 sm:p-12 md:p-24`}
       >
         <main className="max-w-2xl mx-auto space-y-12">
           <Nav />
@@ -62,7 +62,6 @@ const Footer = () => {
   return (
     <footer className="fade-in-up flex text-sm justify-between items-center">
       <p>&copy; {new Date().getFullYear()} Bridger Tower</p>
-      <ThemeToggle />
     </footer>
   );
 };

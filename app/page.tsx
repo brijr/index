@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <>
-      <h1>Bridger Tower</h1>
+      <section className="text-xl flex gap-2 font-medium">
+        <h1>Bridger Tower</h1> / <h2>Design Engineer</h2>
+      </section>
       <Intro />
     </>
   );
@@ -12,9 +14,9 @@ const Intro = () => {
     <div className="space-y-2 fade-in-up delay-300">
       <h2 className="sr-only">Intro</h2>
       <h3>
-        Product designer and software engineer exploring{" "}
-        <b>user interface design</b>, <b>applied artificial intelligence</b>,
-        and <b>human computer interaction</b>.
+        Design Engineer exploring <b>user interface design</b>,{" "}
+        <b>applied artificial intelligence</b>, and{" "}
+        <b>human computer interaction</b>.
       </h3>
       <h4>
         Currently I work at <a href="https://9d8.dev">9d8</a> and{" "}
