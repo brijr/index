@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
 import { Header } from '@/components/site/header'
+import { Section, Container } from '@/components/craft'
+import { ThemeToggle } from '@/components/theme/theme-toggle'
 
 export default function Index() {
   return (
@@ -9,6 +11,7 @@ export default function Index() {
       <Intro />
       <Work />
       <Other />
+      <Footer />
     </>
   )
 }
@@ -50,6 +53,36 @@ const Other = () => {
     <div className="grid gap-2 fade-in-up delay-500">
       <h2 className="sr-only">Other</h2>
       {/* <Link href="/posts">Posts</Link> */}
+    </div>
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className="mt-auto fade-in-up delay-700 sm:pt-24">
+      <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
+        <Links />
+        <ThemeToggle />
+      </footer>
+    </div>
+  )
+}
+
+const Links = () => {
+  return (
+    <div className="flex lowercase gap-2">
+      <p>bridger.to</p>
+      <p>/</p>
+      <a href="https://youtube.com/@bridgertower" target="_blank">
+        YouTube
+      </a>
+      <a href="https://linkedin.com/in/brijr" target="_blank">
+        LinkedIn
+      </a>
+      <a href="https://resume.bridger.to" target="_blank">
+        Resume
+      </a>
+      <a href="mailto:bridgertower@gmail.com">Email</a>
     </div>
   )
 }

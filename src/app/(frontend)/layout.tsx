@@ -42,7 +42,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {children}
               </Container>
             </Section>
-            <Footer />
           </main>
         </ThemeProvider>
         <Analytics />
@@ -71,38 +70,6 @@ const Nav = () => {
           Twitter
         </a>
       </div>
-    </div>
-  )
-}
-
-const Footer = () => {
-  return (
-    <Section className="mt-auto fade-in-up delay-700">
-      <Container>
-        <footer className="text-muted-foreground text-sm flex gap-2 justify-between items-center">
-          <Links />
-          <ThemeToggle />
-        </footer>
-      </Container>
-    </Section>
-  )
-}
-
-const Links = () => {
-  return (
-    <div className="flex lowercase gap-2">
-      <p>bridger.to</p>
-      <p>/</p>
-      <a href="https://youtube.com/@bridgertower" target="_blank">
-        YouTube
-      </a>
-      <a href="https://linkedin.com/in/brijr" target="_blank">
-        LinkedIn
-      </a>
-      <a href="https://resume.bridger.to" target="_blank">
-        Resume
-      </a>
-      <a href="mailto:bridgertower@gmail.com">Email</a>
     </div>
   )
 }
