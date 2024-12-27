@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { Inter as Font } from "next/font/google";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <Analytics />
       </body>
     </html>
   );
