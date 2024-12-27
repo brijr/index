@@ -8,7 +8,7 @@ export const Work = () => {
         {work.map((project) => (
           <li key={project.name} className="group">
             <a
-              className="p-3 sm:py-1 sm:px-0 border sm:border-x-0 sm:border-t-0 sm:border-b border-accent/20 flex items-center justify-between hover:border-accent/50 transition-all bg-accent/5 sm:bg-transparent rounded-md sm:rounded-none"
+              className="p-3 sm:py-1 sm:px-0 border sm:border-dotted sm:border-x-0 sm:border-t-0 sm:border-b border-accent/20 flex items-center justify-between hover:border-accent/50 transition-all bg-accent/5 sm:bg-transparent rounded-md sm:rounded-none"
               href={project.href}
             >
               <h4 className="transition-all flex gap-1 items-center">
