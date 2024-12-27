@@ -1,4 +1,5 @@
 import { Header } from '@/components/site/header'
+import { Projects } from '@/components/site/projects'
 
 const content = {
   name: 'Software',
@@ -40,16 +41,7 @@ export default function Page() {
   return (
     <>
       <Header page={content.name} />
-      <div className="grid gap-8 fade-in-up delay-300">
-        {content.projects.map((project) => (
-          <div className="reset-link space-y-2" key={project.href}>
-            <a target="_blank" href={project.href}>
-              {project.name}
-            </a>
-            <p className="text-muted-foreground">{project.description}</p>
-          </div>
-        ))}
-      </div>
+      <Projects content={content} />
     </>
   )
 }

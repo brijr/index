@@ -11,7 +11,6 @@ import Logo from '@/public/logo.svg'
 
 import { Inter as Font } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/theme-provider'
-import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Section, Container } from '@/components/craft'
 
 export const metadata: Metadata = {
