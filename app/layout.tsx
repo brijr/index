@@ -2,7 +2,6 @@ import "./globals.css";
 
 import { Inter as Font } from "next/font/google";
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -25,21 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={`${font.className} antialiased scroll-smooth selection:bg-orange-100 dark:selection:bg-orange-600/50 p-6 sm:p-12 lg:p-24`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main className="max-w-2xl mx-auto space-y-12">
-            <Nav />
-            {children}
-          </main>
-        </ThemeProvider>
+        <main className="max-w-2xl mx-auto space-y-12">
+          <Nav />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
@@ -62,5 +55,14 @@ const Nav = () => {
         <a href="https://x.com/bridgertower">Twitter</a>
       </div>
     </nav>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="fade-in-up flex text-sm justify-between items-center">
+      <p>&copy; {new Date().getFullYear()} Bridger Tower</p>
+      <ThemeToggle />
+    </footer>
   );
 };
