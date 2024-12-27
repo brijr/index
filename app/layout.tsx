@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${font.className} bg-background text-foreground antialiased scroll-smooth p-6 sm:p-12 md:p-24`}
       >
-        <main className="max-w-2xl mx-auto space-y-12">
+        <main className="max-w-2xl mx-auto space-y-12 sm:space-y-16">
           <Nav />
           {children}
           <Footer />
@@ -51,8 +51,9 @@ const Nav = () => {
         />
       </Link>
       <div className="flex gap-3 text-sm">
-        <a href="https://github.com/brijr">GitHub</a>
-        <a href="https://x.com/bridgertower">Twitter</a>
+        <a className="link" href="https://github.com/brijr">
+          GitHub
+        </a>
       </div>
     </nav>
   );
@@ -60,8 +61,32 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <footer className="fade-in-up flex text-sm justify-between items-center">
-      <p>&copy; {new Date().getFullYear()} Bridger Tower</p>
+    <footer className="mt-24 fade-in-up delay-footer sm:flex text-sm justify-between items-center">
+      <div className="flex gap-3 flex-wrap">
+        <a target="_blank" className="link" href="https://x.com/bridgertower">
+          X.com
+        </a>
+        <a
+          target="_blank"
+          className="link"
+          href="https://linkedin.com/in/brijr"
+        >
+          LinkedIn
+        </a>
+        <a
+          target="_blank"
+          className="link"
+          href="https://youtube.com/@bridgertower"
+        >
+          YouTube
+        </a>
+        <a target="_blank" className="link" href="https://read.cv/brijr">
+          Resume
+        </a>
+      </div>
+      <p className="sr-only sm:not-sr-only">
+        &copy; {new Date().getFullYear()} Bridger Tower
+      </p>
     </footer>
   );
 };
