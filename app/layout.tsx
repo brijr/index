@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${font.className} bg-background text-foreground antialiased scroll-smooth p-6 sm:p-12 md:p-24`}
       >
-        <main className="max-w-2xl mx-auto space-y-12 sm:space-y-16">
+        <main className="max-w-xl mx-auto space-y-12 sm:space-y-16">
           <Nav />
           {children}
           <Footer />
