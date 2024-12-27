@@ -12,12 +12,12 @@ export const work = [
   {
     name: "Components",
     href: "https://components.bridger.to",
-    description: "React Component Library",
+    description: "OS Component Library",
   },
   {
     name: "Next WP",
     href: "https://next-wp.com",
-    description: "Next.js and WordPress",
+    description: "OS Next.js / WordPress",
   },
   {
     name: "Outr.ai",

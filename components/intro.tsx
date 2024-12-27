@@ -8,7 +8,7 @@ export const Intro = () => {
         <b>human computer interaction</b>.
       </h3>
       <h4>
-        Currently I work at{" "}
+        Currently, I work at{" "}
         <a className="link" href="https://ampry.com" target="_blank">
           Ampry
         </a>{" "}
