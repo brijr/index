@@ -67,7 +67,7 @@ const Nav = () => {
           GitHub
         </a>
         <a className="reset-link hover:text-foreground" href="https://x.com/bridgertower">
-          Twitter
+          X.com
         </a>
       </div>
     </div>
