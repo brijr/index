@@ -10,11 +10,6 @@ const content = {
       description: 'An open source collection of the best books on design curated by me.',
     },
     {
-      name: 'Design for AI',
-      href: 'https://designforai.org',
-      description: 'WIP. Collection of thoughts and resources on design for AI.',
-    },
-    {
       name: 'Travel Mellow',
       href: 'https://travelmellow.com',
       description: 'A travel publication run by my wife, Rileigh. Built with Next-WP.',
