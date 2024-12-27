@@ -49,7 +49,7 @@ const Other = () => {
   return (
     <div className="grid gap-2 fade-in-up delay-500">
       <h2 className="sr-only">Other</h2>
-      <Link href="/posts">Posts</Link>
+      {/* <Link href="/posts">Posts</Link> */}
     </div>
   )
 }
