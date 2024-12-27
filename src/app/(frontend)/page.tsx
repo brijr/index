@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
-import { Header } from '@/components/site/header'
-import { Section, Container } from '@/components/craft'
+import { Header } from '@/components/site/header''
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 
 export default function Index() {
