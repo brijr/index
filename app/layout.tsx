@@ -65,24 +65,16 @@ const Footer = () => {
   return (
     <footer className="mt-24 fade-in-up delay-footer sm:flex text-sm justify-between items-center">
       <div className="flex gap-3 flex-wrap">
-        <a target="_blank" className="link" href="https://x.com/bridgertower">
+        <a target="_blank" className="link" href="/x">
           X.com
         </a>
-        <a
-          target="_blank"
-          className="link"
-          href="https://linkedin.com/in/brijr"
-        >
+        <a target="_blank" className="link" href="/linkedin">
           LinkedIn
         </a>
-        <a
-          target="_blank"
-          className="link"
-          href="https://youtube.com/@bridgertower"
-        >
+        <a target="_blank" className="link" href="/youtube">
           YouTube
         </a>
-        <a target="_blank" className="link" href="https://read.cv/brijr">
+        <a target="_blank" className="link" href="/resume">
           Resume
         </a>
       </div>
