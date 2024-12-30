@@ -25,6 +25,11 @@ export const work = [
     description: "Sales Email Agents",
   },
   {
+    name: "Oat.pics",
+    href: "https://oat.pics",
+    description: "Vectorized Shopping",
+  },
+  {
     name: "WaveFinder",
     href: "https://wavefinder.io",
     description: "AI Message Testing",
