@@ -11,7 +11,7 @@ export const work = [
   },
   {
     name: "Components",
-    href: "https://components.bridger.to",
+    href: "https://components.work",
     description: "OS Component Library",
   },
   {
