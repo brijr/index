@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         destination: "https://youtube.com/@bridgertower",
         permanent: true,
       },
+      {
+        source: "/resume",
+        destination: "https://read.cv/brijr",
+        permanent: true,
+      },
     ];
   },
 };
