@@ -14,8 +14,12 @@ export const Intro = () => {
           Currently, I work at{" "}
           <a className="link" href="https://ampry.com" target="_blank">
             Ampry
-          </a>{" "}
-          and{" "}
+          </a>
+          ,{" "}
+          <a className="link" target="_blank" href="https://alpinecodex.com">
+            Alpine Codex
+          </a>
+          , and{" "}
           <a className="link" href="https://9d8.dev" target="_blank">
             9d8
           </a>{" "}
