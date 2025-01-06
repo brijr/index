@@ -78,9 +78,7 @@ const Footer = () => {
           Resume
         </a>
       </div>
-      <p className="sr-only sm:not-sr-only">
-        &copy; {new Date().getFullYear()} Bridger Tower
-      </p>
+      <p className="sr-only sm:not-sr-only">&copy; 2025, Bridger Tower</p>
     </footer>
   );
 };
