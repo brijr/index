@@ -3,7 +3,7 @@ import { getPostBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { Post as PostProps } from "@/payload-types";
 import { Metadata } from "next";
-import { CodeBlock } from "@/components/CodeBlock";
+import CodeBlock from "@/components/blocks/Code";
 
 interface ExtendedPost extends PostProps {
   blocks?: Array<{
