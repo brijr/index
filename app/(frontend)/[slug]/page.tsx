@@ -1,8 +1,7 @@
-import { getPostBySlug } from "@/lib/data";
 import { RichText } from "@payloadcms/richtext-lexical/react";
-import { Header } from "@/components/site/header";
-import { Article } from "@/components/craft";
+import { getPostBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
+import { Post } from "@/payload-types";
 
 export default async function Post({
   params,
@@ -10,7 +9,7 @@ export default async function Post({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getPostBySlug({ slug });
+  const post: Post = await getPostBySlug({ slug });
 
   if (!post) {
     return notFound();
@@ -18,10 +17,10 @@ export default async function Post({
 
   return (
     <>
-      <Header page={post.title} />
-      <Article className="fade-in-up delay-300">
+      <h1 className="fade-in-up">{post.title}</h1>
+      <div className="fade-in-up delay-300">
         <RichText data={post.content} />
-      </Article>
+      </div>
     </>
   );
 }
