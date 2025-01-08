@@ -3,6 +3,16 @@ import { getPostBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { Post as PostProps } from "@/payload-types";
 import { Metadata } from "next";
+import { CodeBlock } from "@/components/CodeBlock";
+
+interface ExtendedPost extends PostProps {
+  blocks?: Array<{
+    id?: string;
+    blockType: string;
+    language?: string;
+    code?: string;
+  }>;
+}
 
 export async function generateMetadata({
   params,
@@ -30,7 +40,7 @@ export default async function Post({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post: PostProps = await getPostBySlug({ slug });
+  const post = (await getPostBySlug({ slug })) as ExtendedPost;
 
   if (!post) {
     return notFound();
@@ -47,6 +57,22 @@ export default async function Post({
 
       <div className="fade-in-up delay-intro craft spaced delay-300">
         <RichText data={post.content} />
+        {post.blocks?.map((block) => {
+          if (
+            block.blockType === "code-block" &&
+            block.language &&
+            block.code
+          ) {
+            return (
+              <CodeBlock
+                key={block.id || block.code}
+                language={block.language}
+                code={block.code}
+              />
+            );
+          }
+          return null;
+        })}
       </div>
     </>
   );
