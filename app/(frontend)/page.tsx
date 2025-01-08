@@ -1,7 +1,7 @@
 import { Intro } from "@/components/intro";
 import { Work } from "@/components/work";
 import { getPosts } from "@/lib/data";
-import { Post } from "@/payload-types";
+import { Post as PostProps } from "@/payload-types";
 import Link from "next/link";
 
 export default async function Home() {
@@ -18,7 +18,7 @@ export default async function Home() {
       <Work />
 
       <div className="grid gap-8 fade-in-up delay-300">
-        {posts.map((post: Post) => (
+        {posts.map((post: PostProps) => (
           <div key={post.id}>
             <h3>
               <Link href={`./${post.slug}`}>{post.title}</Link>
