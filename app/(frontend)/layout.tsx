@@ -2,6 +2,7 @@ import "../globals.css";
 
 import { Inter as Font } from "next/font/google";
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/next";
 
 import Image from "next/image";
@@ -34,6 +35,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <Toaster position="top-center" />
         <Analytics />
       </body>
     </html>

@@ -7,7 +7,6 @@
 }
 
 @layer base {
-
   *,
   ::after,
   ::before,
@@ -185,14 +184,6 @@ b {
     @apply bg-accent/15 ring-accent/30;
   }
 
-  pre {
-    @apply overflow-x-auto rounded-lg border bg-accent p-4;
-
-    code {
-      @apply relative rounded bg-transparent p-0;
-    }
-  }
-
   article {
     @apply max-w-prose;
   }
@@ -301,7 +292,6 @@ b {
 
   /* Nested Navigation Lists */
   nav {
-
     ul,
     ol {
       @apply list-none;
@@ -320,12 +310,6 @@ b {
   /* Blockquote Citations */
   blockquote cite {
     @apply block text-sm text-accent;
-  }
-
-  /* Code Block Filename */
-  pre[data-filename]::before {
-    @apply block text-sm font-medium text-accent;
-    content: attr(data-filename);
   }
 
   /* Table of Contents */
@@ -406,9 +390,8 @@ b {
 }
 
 .spaced {
-
   /* Base element spacing */
-  >*+* {
+  > * + * {
     @apply mt-3;
   }
 

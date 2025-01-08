@@ -1,4 +1,4 @@
-import type { CollectionConfig, Block } from "payload";
+import type { CollectionConfig } from "payload";
 import { BlocksFeature, lexicalEditor } from "@payloadcms/richtext-lexical";
 import { CodeBlock } from "@/components/blocks/Code/config";
 
@@ -12,6 +12,10 @@ export const Posts: CollectionConfig = {
       name: "title",
       type: "text",
       required: true,
+    },
+    {
+      name: "description",
+      type: "text",
     },
     {
       name: "slug",

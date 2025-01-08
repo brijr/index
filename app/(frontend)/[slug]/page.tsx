@@ -3,7 +3,8 @@ import { getPostBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { Post as PostProps } from "@/payload-types";
 import { Metadata } from "next";
-import CodeBlock from "@/components/blocks/Code";
+import { CodeBlock } from "@/components/blocks/Code";
+import { type JSXConvertersFunction } from "@payloadcms/richtext-lexical/react";
 
 interface ExtendedPost extends PostProps {
   blocks?: Array<{
@@ -13,6 +14,18 @@ interface ExtendedPost extends PostProps {
     code?: string;
   }>;
 }
+
+const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
+  ...defaultConverters,
+  blocks: {
+    ...defaultConverters.blocks,
+    codeBlock: ({
+      node,
+    }: {
+      node: { fields: { language: string; code: string } };
+    }) => <CodeBlock language={node.fields.language} code={node.fields.code} />,
+  },
+});
 
 export async function generateMetadata({
   params,
@@ -56,23 +69,7 @@ export default async function Post({
       </section>
 
       <div className="fade-in-up delay-intro craft spaced delay-300">
-        <RichText data={post.content} />
-        {post.blocks?.map((block) => {
-          if (
-            block.blockType === "code-block" &&
-            block.language &&
-            block.code
-          ) {
-            return (
-              <CodeBlock
-                key={block.id || block.code}
-                language={block.language}
-                code={block.code}
-              />
-            );
-          }
-          return null;
-        })}
+        <RichText data={post.content} converters={jsxConverters} />
       </div>
     </>
   );
