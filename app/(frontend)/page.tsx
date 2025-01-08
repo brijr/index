@@ -17,7 +17,7 @@ export default async function Home() {
       <Intro />
       <Work />
 
-      <div className="grid gap-8 fade-in-up delay-300">
+      <div className="grid gap-8 fade-in-up delay-footer delay-300">
         {posts.map((post: PostProps) => (
           <div key={post.id}>
             <h3>
