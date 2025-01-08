@@ -64,7 +64,7 @@ export default async function Post({
       <section className="fade-in-up delay-header">
         <h1 className="font-medium">{post.title}</h1>
         <h2 className="text-accent">
-          by <a href="https://x.com/bridgertower">Bridger Tower</a>
+          Written by <a href="https://x.com/bridgertower">Bridger Tower</a>
         </h2>
       </section>
 
