@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   return {
     title: post.title,
-    description: `Read ${post.title} by Bridger Tower`,
+    description: post.description,
   };
 }
 
