@@ -29,12 +29,15 @@ export const CodeBlock = ({ language, code }: CodeBlockProps) => {
             <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/30" />
           </div>
         </div>
-        <button
-          onClick={handleCopy}
-          className="hover:text-accent/80 transition-colors cursor-pointer"
-        >
-          <CopyIcon className="w-4 h-4" />
-        </button>
+        <div className="flex items-center gap-2">
+          <div className="text-xs text-accent">{language}</div>
+          <button
+            onClick={handleCopy}
+            className="hover:text-accent/80 transition-colors cursor-pointer"
+          >
+            <CopyIcon className="w-4 h-4" />
+          </button>
+        </div>
       </div>
 
       <div className="px-4 overflow-x-auto">
