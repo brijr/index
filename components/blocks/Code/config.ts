@@ -1,7 +1,7 @@
 import { Block } from "payload";
 
-const CodeBlock: Block = {
-  slug: "code-block",
+export const CodeBlock: Block = {
+  slug: "codeBlock",
   fields: [
     {
       name: "language",
@@ -24,5 +24,3 @@ const CodeBlock: Block = {
     },
   ],
 };
-
-export default CodeBlock;

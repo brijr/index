@@ -1,31 +1,6 @@
 import type { CollectionConfig, Block } from "payload";
-import { lexicalEditor } from "@payloadcms/richtext-lexical";
-
-const CodeBlock: Block = {
-  slug: "code-block",
-  interfaceName: "CodeBlock",
-  fields: [
-    {
-      name: "language",
-      type: "select",
-      required: true,
-      options: [
-        { label: "JavaScript", value: "javascript" },
-        { label: "TypeScript", value: "typescript" },
-        { label: "HTML", value: "html" },
-        { label: "CSS", value: "css" },
-        { label: "Python", value: "python" },
-        { label: "JSX", value: "jsx" },
-        { label: "TSX", value: "tsx" },
-      ],
-    },
-    {
-      name: "code",
-      type: "textarea",
-      required: true,
-    },
-  ],
-};
+import { BlocksFeature, lexicalEditor } from "@payloadcms/richtext-lexical";
+import { CodeBlock } from "@/components/blocks/Code/config";
 
 export const Posts: CollectionConfig = {
   slug: "posts",
@@ -51,13 +26,14 @@ export const Posts: CollectionConfig = {
       type: "richText",
       required: true,
       editor: lexicalEditor({
-        features: ({ defaultFeatures }) => defaultFeatures,
+        features: ({ defaultFeatures, rootFeatures }) => [
+          ...rootFeatures,
+          ...defaultFeatures,
+          BlocksFeature({
+            blocks: [CodeBlock],
+          }),
+        ],
       }),
-    },
-    {
-      name: "blocks",
-      type: "blocks",
-      blocks: [CodeBlock],
     },
   ],
 };
