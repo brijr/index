@@ -1,4 +1,4 @@
-import { work } from "@/app/work";
+import { work } from "@/lib/work";
 
 export const Work = () => {
   return (
