@@ -17,10 +17,11 @@ export default async function Home() {
       <Intro />
       <Work />
 
-      <div className="grid gap-8 fade-in-up delay-footer delay-300">
+      <div className="space-y-2 text-sm fade-in-up delay-footer delay-300">
+        <h2 className="text-accent">Posts</h2>
         {posts.map((post: PostProps) => (
           <div key={post.id}>
-            <h3>
+            <h3 className="craft">
               <Link href={`./${post.slug}`}>{post.title}</Link>
             </h3>
           </div>
