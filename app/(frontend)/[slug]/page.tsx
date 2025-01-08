@@ -17,8 +17,14 @@ export default async function Post({
 
   return (
     <>
-      <h1 className="fade-in-up">{post.title}</h1>
-      <div className="fade-in-up delay-300">
+      <section className="fade-in-up delay-header">
+        <h1 className="font-medium">{post.title}</h1>
+        <h2 className="text-accent">
+          by <a href="https://x.com/bridgertower">Bridger Tower</a>
+        </h2>
+      </section>
+
+      <div className="fade-in-up delay-intro craft spaced delay-300">
         <RichText data={post.content} />
       </div>
     </>
