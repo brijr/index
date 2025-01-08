@@ -10,13 +10,13 @@ interface CodeBlockProps {
 }
 
 export const CodeBlock = ({ language, code }: CodeBlockProps) => {
-  const [copied, setCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(code);
-    setCopied(true);
+    setIsCopied(true);
     toast.success("Copied to clipboard");
-    setTimeout(() => setCopied(false), 2000);
+    setTimeout(() => setIsCopied(false), 2000);
   };
 
   return (
@@ -33,7 +33,7 @@ export const CodeBlock = ({ language, code }: CodeBlockProps) => {
           <div className="text-xs text-accent">{language}</div>
           <button
             onClick={handleCopy}
-            className="hover:text-accent/80 transition-colors cursor-pointer"
+            className={`hover:text-accent/80 transition-colors cursor-pointer ${isCopied ? "text-accent" : ""}`}
           >
             <CopyIcon className="w-4 h-4" />
           </button>
