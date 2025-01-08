@@ -178,7 +178,11 @@ b {
 
   /* Code */
   code {
-    @apply relative rounded bg-accent px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+    @apply relative rounded-md bg-accent/10 px-[0.5rem] py-[0.3rem] text-accent font-mono text-[0.9rem] font-medium tracking-tight ring-1 ring-accent/20 transition-colors;
+  }
+
+  code:hover {
+    @apply bg-accent/15 ring-accent/30;
   }
 
   pre {
