@@ -7,6 +7,7 @@
 }
 
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -44,6 +45,7 @@ b {
     filter: blur(3px);
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     filter: blur(0px);
@@ -96,32 +98,32 @@ b {
   /* Headings */
   h1,
   .h1 {
-    @apply text-4xl font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   h2,
   .h2 {
-    @apply text-3xl font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   h3,
   .h3 {
-    @apply text-2xl font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   h4,
   .h4 {
-    @apply text-xl font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   h5,
   .h5 {
-    @apply text-lg font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   h6,
   .h6 {
-    @apply text-base font-medium tracking-tight;
+    @apply font-medium tracking-tight;
   }
 
   /* Paragraph */
@@ -161,7 +163,7 @@ b {
 
   /* Horizontal Rule */
   hr {
-    @apply my-6;
+    @apply my-3;
   }
 
   /* Links */
@@ -295,6 +297,7 @@ b {
 
   /* Nested Navigation Lists */
   nav {
+
     ul,
     ol {
       @apply list-none;
@@ -399,15 +402,17 @@ b {
 }
 
 .spaced {
+
   /* Base element spacing */
-  > * + * {
-    @apply mt-6;
+  >*+* {
+    @apply mt-3;
   }
 
   /* Lists */
   ul,
   ol {
-    @apply my-6;
+    @apply my-3;
+
     li {
       @apply mt-2;
     }
@@ -415,7 +420,8 @@ b {
 
   /* Definition Lists */
   dl {
-    @apply my-6;
+    @apply my-3;
+
     dd {
       @apply mt-2;
     }
@@ -423,12 +429,13 @@ b {
 
   /* Tables */
   table {
-    @apply my-6;
+    @apply my-3;
   }
 
   /* Figures */
   figure {
     @apply my-8;
+
     figcaption {
       @apply mt-4;
     }
@@ -436,12 +443,13 @@ b {
 
   /* Code blocks */
   pre {
-    @apply my-6;
+    @apply my-3;
   }
 
   /* Blockquotes */
   blockquote {
-    @apply my-6;
+    @apply my-3;
+
     cite {
       @apply mt-2;
     }
@@ -449,7 +457,8 @@ b {
 
   /* Table of Contents */
   .table-of-contents {
-    @apply my-6;
+    @apply my-3;
+
     li {
       @apply my-2;
     }
