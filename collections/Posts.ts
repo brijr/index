@@ -16,6 +16,7 @@ export const Posts: CollectionConfig = {
     {
       name: "description",
       type: "text",
+      required: true,
     },
     {
       name: "slug",
